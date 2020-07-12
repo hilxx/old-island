@@ -1,0 +1,95 @@
+.wrap {
+    background-color: rgba(0,0,0,.1);
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    line-height: 46rpx;
+}
+h2 {
+    color: #494949;
+    font-size: 34rpx;
+    display: inline-block;
+    padding: 5px 0;
+    font-weight: 600;
+}
+.cover,
+.comments,
+.summary-wrap,
+.information {
+    width: 98vw;
+    background-color: hsla(0,0%,100%,.8);
+    padding: 15px 10px;
+    height: max-content;
+    margin: 0 auto 15px;
+}
+
+.cover > image,
+.cover > view {
+    margin: 0 auto;
+}
+
+.cover > image {
+    width: 200rpx;
+    height: 300rpx;
+    display: block;
+}
+
+.cover view {
+    width: max-content;
+}
+
+.cover view:last-child {
+    text-align: center;
+    font-size: 24rpx;
+    color: rgba(0,0,0,.7);
+}
+
+.comments {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.summary {
+    hyphens: auto;
+}
+
+.information {
+    margin-bottom: 30px;
+}
+
+.information .list {
+    float: left;
+    display: inline-block;
+    width: 150rpx;
+    font-weight: 600;
+}
+
+
+.footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px 0 5px 20px;
+}
+
+.like,
+.share {
+    margin-left: 40rpx;
+}
+
+.alarm {
+    color: #f57fa9 !important;
+    border-color: red !important;
+}
+
+
+.tag-num {
+    font-size: 20rpx;
+}

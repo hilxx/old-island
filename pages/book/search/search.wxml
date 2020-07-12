@@ -1,0 +1,5 @@
+<x-search bind:commit="commit" bind:hotSearch="hotSearch" bind:cutHistory="cutHistory"
+          bind:inputClear="inputClear" bind:historyAsk="historyAsk" bind:onDetail="onDetail"
+          books="{{books}}" placeholder="{{placeholder}}" hotTitle="{{hotTitle}}"
+          history="{{history}}" total="{{total}}">
+</x-search>

@@ -1,0 +1,7 @@
+<!--components/like.wxml-->
+
+<view class="wrap" catch:tap="toggleLike">
+    <image src="{{like.like_status? likeImg: dislikeImg}}" />
+    <text wx:if="{{like.fav_nums !== null}}">{{like.fav_nums}}</text>
+</view>
+

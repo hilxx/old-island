@@ -1,0 +1,54 @@
+<view class="wrap">
+    <view class="header">
+
+        <view class="user">
+            <image src="images/backdrop.png" mode="aspectFill"></image>
+            <view class="user-info">
+
+                <view wx:if="{{!userInfo}}" class="user-info-out" >
+                    <view class="article">
+                        <button open-type="getUserInfo" bind:getuserinfo="getUserInfo" class="user-button">
+                            登录
+                        </button>
+                    </view>
+                </view>
+
+                <view wx:if="{{userInfo}}" class="user-info-in">
+                    <view class="article">
+                        <x-button class="user-button">
+                            <image slot="img" src="{{userInfo.avatarUrl}}" class="user-img"></image>
+                        </x-button>
+                    </view>
+                    {{userInfo.nickName}}
+                </view>
+            </view>
+        </view>
+
+        <view class="about">
+            <view class="about-us">
+                <icon type="info" size="23" color="#aaaaaa"></icon>
+                <view>关于我们</view>
+            </view>
+            <view class="about-book">
+                <view>{{likeBookCount}}</view>
+                <view>喜欢的书</view>
+            </view>
+        </view>
+    </view>
+
+
+    <view class="like-classic">
+        <view class="like-text">
+            <image src="images/like-text.png"></image>
+        </view>
+
+        <view class="books">
+            <block wx:for="{{likeClassic}}">
+                <view bind:tap="onDetail" data-id="{{item.id}}" data-type="{{item.type}}" class="book-item">
+                    <x-classic-cover classic="{{item}}" like="{{like}}" index="{{index}}"
+                                     bind:dislike="onDislike" />
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

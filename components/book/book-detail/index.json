@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "x-comment": "../book-comment/index",
+    "x-like": "/components/like/index",
+    "x-tag": "/components/tag/index",
+    "x-share": "/components/share/index"
+  }
+}

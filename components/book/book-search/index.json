@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "x-cover": "/components/book/book-cover/index",
+    "x-tag": "/components/tag/index"
+  }
+}

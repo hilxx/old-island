@@ -1,0 +1,26 @@
+/* components/like.wxss */
+.wrap {
+    height: min-content;
+    display: flex;
+    position: relative;
+}
+
+.wrap::after {
+    position: absolute;
+    content: '';
+    top: -6px;
+    right: -5px;
+    bottom: -6px;
+    left: -6px;
+}
+
+.wrap > image {
+    width: 32rpx;
+    height: 32rpx;
+}
+.wrap > text {
+    font-size: 20rpx;
+    color: rgba(0,0,0,.6);
+    position: relative;
+    top: -2px;
+}

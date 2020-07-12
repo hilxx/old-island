@@ -1,0 +1,43 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.main-img,
+.main-img > image {
+    position: relative;
+    width: 100%;
+    height: 500rpx;
+}
+
+.tag-img,
+.tag-img > image {
+    height: 150rpx;
+
+}
+
+
+.tag-img {
+    position: relative;
+    width: 100%;
+}
+
+.tag-img > image {
+    position: absolute;
+    width: 50rpx;
+    top: -40%;
+    left: 20rpx;
+}
+
+.text {
+    padding: 0 150px;
+    hyphens: auto;
+    white-space: normal;
+    font-size: 35rpx;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .8);
+    width: max-content;
+}

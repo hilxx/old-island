@@ -1,0 +1,11 @@
+<view class="wrap" hidden="{{hidden}}">
+    <view class="main-img">
+        <image src="{{image}}"></image>
+    </view>
+    <view class="tag-img">
+        <image src="images/sentence@tag.png"></image>
+    </view>
+    <view class="text">
+        {{content}}
+    </view>
+</view>

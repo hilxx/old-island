@@ -1,0 +1,14 @@
+.wrap {
+    width: min-content;
+    height: min-content;
+    border: 0;
+}
+
+.wrap image {
+    width: 32rpx;
+    height: 32rpx;
+    display: block;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}

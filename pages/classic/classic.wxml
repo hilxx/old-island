@@ -1,0 +1,25 @@
+<!--pages/classic/classic.wxml-->
+<view class="wrap">
+    <view class="header">
+        <view class="he-l">
+            <x-periodical date="{{pubdate}}" index="{{classic.index}}" />
+        </view>
+
+        <view class="he-r" >
+            <x-like like="{{like}}" class="like" />
+            <x-share class="share" ex-img="share-img"/>
+        </view>
+
+    </view>
+    <view class="article">
+        <x-movie hidden="{{classic.type != 100}}" content="{{classic.content}}" image="{{classic.image}}" title="{{classic.title}}"></x-movie>
+        <x-music  wx:if="{{classic.type == 200}}" content="{{classic.content}}" image="{{classic.image}}"  title="{{classic.title}}"  music="{{classic.url}}"></x-music>
+        <x-sentence hidden="{{classic.type != 300}}" content="{{classic.content}}" image="{{classic.image}}" title="{{classic.title}}" ></x-sentence>
+    </view>
+
+    <view class="footer" bind:upOrDown="pageUp">
+        <x-nav final="{{final}}" latest="{{latest}}" title="{{classic.title}}"></x-nav>
+    </view>
+
+</view>
+

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-classic-detail": "/pages/classic/classic"
+  }
+}

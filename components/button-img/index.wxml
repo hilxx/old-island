@@ -1,0 +1,3 @@
+<button  open-type="{{openType}}">
+    <slot name="img"></slot>
+</button>

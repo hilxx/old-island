@@ -1,0 +1,14 @@
+<view class="wrap" hidden="{{hidden}}">
+    <view class="main-img">
+        <view class="music-wrap" bind:tap ='toggleMusic'>
+            <image src="{{playing? 'images/player@pause.png': 'images/player@play.png'}}" class="play" mode="aspectFit"></image>
+            <image src="{{image}}"  mode="aspectFit"></image>
+        </view>
+    </view>
+    <view class="tag-img">
+        <image src="images/music@tag.png"></image>
+    </view>
+    <view class="text">
+        {{content}}
+    </view>
+</view>

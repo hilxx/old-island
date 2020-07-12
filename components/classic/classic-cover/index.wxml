@@ -1,0 +1,11 @@
+<view class="wrap">
+    <view class="header">
+        <view class="category">{{category}}</view>
+        <x-like like="{{like}}" bind:like="onLike" alarm="{{false}}"></x-like>
+    </view>
+
+    <view class="article">
+        <image src="{{classic.image}}" class="{{classic.type == 200? 'music-img': 'movie-img'}}"></image>
+        <view>{{classic.content}}</view>
+    </view>
+</view>

@@ -1,0 +1,12 @@
+<!--components/nav/index.wxml-->
+<view class="wrap">
+
+    <view bind:tap="next">
+        <image class="icon" src="{{latest? disLeft: left}}"></image>
+    </view>
+    <view class="title">{{title}}</view>
+    <view bind:tap="previous">
+        <image class="icon" src="{{final? disRight: right}}"></image>
+    </view>
+
+</view>

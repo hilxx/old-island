@@ -1,0 +1,6 @@
+<view class="wrap ex-wrap {{alarm ? 'ex-alarm': ''}}" >
+        <slot name="before"></slot>
+            {{content}}
+        <slot name="after"></slot>
+</view>
+

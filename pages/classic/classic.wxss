@@ -1,0 +1,40 @@
+.wrap,
+.header,
+.he-r {
+    display: flex;
+}
+.wrap {
+    flex-direction: column;
+    align-items: center;
+}
+.header,
+.he-r {
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.header {
+    width: 100vw;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 5px;
+}
+
+.header .share,
+.header .like {
+    padding: 0 7px;
+}
+
+.article {
+    margin-top: 20px;
+}
+.footer {
+    position: absolute;
+    bottom: 35px;
+}
+
+.share-img {
+    width: 32rpx;
+    height: 32rpx;
+}

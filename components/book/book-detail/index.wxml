@@ -1,0 +1,51 @@
+<view class="wrap">
+
+    <view class="main">
+        <view class="cover">
+            <image src="{{detail.image}}"></image>
+            <view><h2>{{detail.title}}</h2></view>
+            <view>
+                <block wx:for="{{detail.author}}" wx:key="index"><text>{{item}}  </text></block>
+            </view>
+        </view>
+
+        <view class="comments">
+
+            <block wx:for="{{comments}}" wx:key="index">
+                <x-tag content="{{item.content}}" ex-alarm="alarm" data-index="{{index}}"
+                       bind:tap="fastComment" alarm="{{item.already}}">
+                    <span slot="after" class="tag-num">+{{item.nums}}</span>
+                </x-tag>
+            </block>
+
+            <view wx:if="{{comments.length === 0}}">
+                暂无人来过，快抢沙发
+            </view>
+        </view>
+
+        <view class="summary-wrap">
+            <h2>内容简介</h2>
+            <text decode="1" class="summary">
+                {{detail.summary}}
+            </text>
+        </view>
+
+        <view class="information">
+            <view><span class="list">装帧</span> {{detail.binding}}</view>
+            <view><span class="list">页数</span> {{detail.pages}}</view>
+            <view><span class="list">定价</span> {{detail.price}}</view>
+            <view><span class="list">第一版</span> {{detail.pubdate}}</view>
+            <view><span class="list">出版社</span>{{detail.publisher}}</view>
+        </view>
+    </view>
+
+    <view class="footer">
+        <x-comment ex-wrap="x-comment" bind:addComment="addComment" placeholder="{{placeholder}}"
+                   initial="{{initial}}">
+        </x-comment>
+
+        <x-like like="{{like}}" class="like" />
+        <x-share  class="share"/>
+    </view>
+</view>
+

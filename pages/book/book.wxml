@@ -1,0 +1,8 @@
+<view class="wrap">
+    <view bind:tap="onSearch" class="search" >{{'搜索书籍..'}}</view>
+    <view class="books">
+        <block wx:for="{{books}}" wx:key="{{id}}" >
+            <x-cover book="{{item}}" bind:onDetail="onDetail" class="book"></x-cover>
+        </block>
+    </view>
+</view>

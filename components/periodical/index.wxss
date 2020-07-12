@@ -1,0 +1,30 @@
+.wrap {
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    align-items: flex-end;
+}
+
+
+h1{
+    font-weight: 700;
+    font-size: 54rpx;
+    line-height: 54rpx;
+}
+.line {
+    width: 1px;
+    height: 48rpx;
+    background-color: rgba(0,0,0,.7);
+    margin: 0 8px;
+}
+.date {
+    align-self: last-baseline;
+    height: inherit;
+    overflow: hidden;
+    line-height: 24rpx;
+    font-size: 24rpx;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}

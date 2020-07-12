@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "x-like": "/components/like/index",
+    "x-periodical": "/components/periodical/index",
+    "x-share": "/components/share/index",
+    "x-nav": "/components/classic/nav/index",
+    "x-music": "/components/classic/music/index",
+    "x-movie": "/components/classic/movie/index",
+    "x-sentence": "/components/classic/sentence/index"
+  }
+}

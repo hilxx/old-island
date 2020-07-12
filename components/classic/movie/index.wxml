@@ -1,0 +1,11 @@
+<!--components/movie/index.wxml-->
+
+<view class="wrap" hidden="{{hidden}}">
+    <view class="main-img"><image src="{{image}}"></image></view>
+    <view class="tag-img">
+        <image src="images/movie@tag.png"></image>
+    </view>
+    <view class="text">
+        {{content}}
+    </view>
+</view>

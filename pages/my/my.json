@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-classic-cover": "/components/classic/classic-cover/index",
+    "x-button": "/components/button-img/index"
+  }
+}

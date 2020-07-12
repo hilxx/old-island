@@ -1,0 +1,12 @@
+.wrap {
+    font-size: 28rpx;
+    margin: 2px 6px 6px 0;
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid #c9fdcf;
+    background-color: hsla(0,0%,100%,.9);
+}
+.alarm {
+    color: #f57fa9;
+    border-color: red;
+}

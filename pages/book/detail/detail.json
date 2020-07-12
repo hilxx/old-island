@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "x-detail": "/components/book/book-detail/index"
+  }
+}

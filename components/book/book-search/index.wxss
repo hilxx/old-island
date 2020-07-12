@@ -1,0 +1,162 @@
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+h3 {
+    font-size: 130%;
+    display: block;
+}
+.header,
+.hot,
+.history {
+    padding: 5px 20px;
+}
+
+.hot,
+.history {
+    margin-top: 20px;
+}
+.header,
+.hot-items,
+.history-items {
+    display: flex;
+}
+.header {
+    justify-content: space-between;
+    align-items: baseline;
+    box-shadow: 0 5px 10px -10px rgba(0,0,0,.4);
+}
+
+.search-icon {
+    width: .8em;
+    height: .8em;
+    border: 2px solid #aaaaaa;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: .5em;
+}
+
+.search-icon::before {
+    content: '';
+    position: absolute;
+    bottom: -.4em;
+    right: -.1em;
+    background-color: #aaaaaa;
+    width: 2px;
+    height: .6em;
+    transform: rotate(-45deg);
+}
+.clear-icon {
+    transform: rotate(45deg);
+    font-size: 1em;
+    line-height: .6em;
+    text-align: center;
+    color: #ffffff;
+    width: .8em;
+    height: .8em;
+    background-color: #aaaaaa;
+    border-radius: 50%;
+    position: absolute;
+    right: .3em;
+    top: 30%;
+}
+
+.input-wrap {
+    position: relative;
+    flex-grow: .8;
+    background-color: #efefef;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.input-wrap input {
+    padding: 5px 40px;
+    outline: none;
+    height: 40rpx;
+    width: inherit;
+    color: rgba(0,0,0,.7);
+}
+
+.cancel {
+    flex-grow: .2;
+    color: #3856aa;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.hot {
+    border-bottom: #efefef 10px solid;
+    height: 40%;
+}
+
+.hot-items,
+.history-items {
+    font-size: 26rpx;
+}
+
+.hot-items {
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.hot-item {
+    padding: 5px 10px;
+    margin: 10px 10px 0 0;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.1);
+}
+
+.hot-item:first-child {
+    background-color: rgba(0,0,0,.2);
+}
+
+
+.history-items {
+    margin-top: 15px;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.history-item {
+    margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cut-history {
+    font-size: 40rpx;
+    line-height: 40rpx;
+    transform: rotate(45deg);
+}
+
+
+.result {
+    height: max-content;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.result > view {
+    margin: 10px;
+}
+
+.no-result {
+    width: max-content;
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.x-tag {
+    border-color: #ff6200;
+}

@@ -1,0 +1,9 @@
+<view class="wrap">
+    <text>No.</text>
+    <h1>{{index}}</h1>
+    <view class="line"></view>
+    <view class="date">
+        <text>{{date.month}}</text>
+        <text>{{date.year}}</text>
+    </view>
+</view>

@@ -1,0 +1,47 @@
+<view class="wrap">
+    <view class="header">
+        <view class="input-wrap">
+            <span class="search-icon"></span>
+            <input type="text" bindconfirm="commit" bindinput="input"
+                   value="{{initial}}" placeholder="{{placeholder}}" confirm-type="search" focus="true" />
+            <view bind:tap="inputClear" class="clear-icon" hidden="{{isInitial}}">+</view>
+        </view>
+        <view class="cancel" bind:tap="cancel">取消</view>
+    </view>
+
+    <view class="chunk" hidden="{{!hidden}}">
+        <view class="hot">
+            <h3>热搜</h3>
+            <view class="hot-items" bind:tap="hotSearch">
+                <block wx:for="{{hotTitle}}" wx:key="index">
+                    <x-tag content="{{item}}" data-title="{{item}}" ex-wrap="x-tag"></x-tag>
+                </block>
+            </view>
+        </view>
+
+        <view class="history">
+            <h3>搜索历史</h3>
+            <view class="history-items">
+                <block wx:for="{{history}}" wx:key="index">
+                    <view class="history-item">
+                        <view bind:tap="historyAsk" data-title="{{item}}">{{item}}</view>
+                        <view bind:tap="cutHistory" class="cut-history" data-index="{{index}}">+</view>
+                    </view>
+                </block>
+
+            </view>
+        </view>
+    </view>
+
+    <view class="result" hidden="{{hidden}}">
+        <block wx:for="{{books}}">
+            <view bind:tap="onDetail" data-id="{{item.id}}">
+                <x-cover book="{{item}}" ></x-cover>
+            </view>
+        </block>
+        <view wx:if="{{total == 0}}" class="no-result">
+            没有搜索到相关书籍
+        </view>
+    </view>
+
+</view>

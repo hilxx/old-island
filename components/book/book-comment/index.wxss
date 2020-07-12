@@ -1,0 +1,96 @@
+.wrap {
+    width: max-content;
+}
+
+.switch,
+.input-wrap {
+    height: 70rpx;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 16px;
+    width: 500rpx;
+    margin: 0 auto;
+}
+
+.clear,
+.input-wrap,
+.shut,
+.shut::before,
+.shut:after {
+    position: absolute;
+}
+
+.switch {
+    line-height: 66rpx;
+    color: rgba(0, 0, 0, .4);
+}
+
+.pop {
+    position: absolute;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 99;
+    left: 0;
+    bottom: 0;
+    height: 200rpx;
+}
+
+.shut {
+    right: 6%;
+    bottom: 18%;
+    width: 3px;
+    height: 20px;
+    transform: rotate(45deg);
+    background: #ff3e54;
+    z-index: 99;
+}
+
+.shut::before,
+.shut::after {
+    content: '';
+}
+
+.shut::before {
+    transform: rotate(-90deg);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hotpink;
+}
+
+.shut::after {
+    top: -5px;
+    right: -5px;
+    bottom: -10px;
+    left: -10px;
+}
+
+.input-wrap {
+    background-color: #ffffff;
+}
+
+.input-wrap > input {
+    padding: 6px 20px;
+    width: inherit;
+}
+
+.clear {
+    right: 10px;
+    top: .5em;
+    z-index: 99;
+}
+
+.trigger-input {
+    width: 100%;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: input-width linear forwards .3s;
+}
+
+@keyframes input-width {
+    to {
+        width: 600rpx;
+    }
+}
+

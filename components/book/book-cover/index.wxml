@@ -1,0 +1,13 @@
+<!--components/book/cover/index.wxml-->
+<view class="wrap" bind:tap="onDetail">
+    <image src="{{book.image}} "></image>
+    <view class="backdrop" style="background-image: url({{book.image}})"></view>
+    <view class="information">
+        <view>{{book.title}}</view>
+        <view>{{book.author}}</view>
+        <view wx:if="{{book.fav_nums}}">
+            {{book.fav_nums}}喜欢
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,1 @@
+<x-classic-detail cid="{{cid}}" type="{{type}}"></x-classic-detail>

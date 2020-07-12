@@ -1,0 +1,7 @@
+<view class="wrap">
+    <x-button openType="share" >
+        <image slot="img" src="/components/images/share.png" class="ex-img" />
+    </x-button>
+</view>
+
+

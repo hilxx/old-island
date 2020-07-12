@@ -1,0 +1,8 @@
+button {
+    width: min-content;
+    height: min-content;
+    padding: 0 !important;
+    border: 0 !important;
+    background-color: transparent;
+}
+
